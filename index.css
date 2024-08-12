@@ -31,21 +31,39 @@ p {
 
 table {
     border-collapse: collapse;
-    border: 2px solid #252959;
+    /* border: 2px solid #252959; */
+    /* border-color: red; */
     overflow-x: scroll;
-    margin: 0 7px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 11px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
     font-size: 15px;
+    padding: 0;
+    margin-top: 0;
 }
 
 h2 {
-    color: black;
+    color: #252959;
     margin: 1em 0;
-    margin-left: 7px;
+    padding-left: 0;
     font-size: 25px;
+    margin-bottom: 8px;
 }
+
+
+h2:not(.info h2) {
+    margin-left: 16px;
+}
+
+tr
 
 body * {
     max-width: 500px;
+}
+
+th {
+    padding-right: 0;
 }
 
 ul {
@@ -67,7 +85,7 @@ th {
     background-color: #252959;
     color: white;
     text-align: left;
-    font-size: 15px;
+    font-size: 16px;
     padding: 1em 0.75em;
     padding-left: 8px;
     padding-right: 8px;
@@ -96,11 +114,12 @@ td:nth-of-type(4), th:nth-of-type(4) {
 } */
 
 .kurs_miti {
-    background-color: rgb(240, 255, 210);
+    background-color: #efeffa;;
+
 }
 
 .kurs_asi {
-    background-color: rgb(255, 238, 168);
+    background-color: #efeffa;;
 }
 
 /* .kurs_miti.color2 {
@@ -113,7 +132,8 @@ td:nth-of-type(4), th:nth-of-type(4) {
 
 td {
     color: black;
-    padding: 0.75em 0.65em;
+    padding: 0.75em 0.45em;
+
 }
 
 td,th {
@@ -146,7 +166,6 @@ ul li {
 
 .E {
     position: relative;
-    background-color: #fce3e3;
 }
 
 .div {
@@ -247,6 +266,10 @@ img {
 
 .info p {
     margin-bottom: 0.5em;
+}
+
+.info h2 {
+    margin-left: 7px;
 }
 
 .info {
